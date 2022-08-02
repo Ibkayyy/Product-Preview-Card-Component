@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 2.5em;
+    font-family: 'Fraunces', serif;
+    margin: 0.5em 0;
+    width: 98%;
+    line-height: 1;
+}
+
+body{
+    background-color: hsl(30, 38%, 92%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9em;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    height: 100vh;
+}
+
+main{
+    background-color: #fff;
+    width: 45em;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+.main-image{
+    width: 50%;
+}
+
+.main-image_{
+    width: 100%;
+    border-radius: 5px 0 0 5px;
+}
+
+.main-image-mobile{
+    display: none;
+}
+
+.main-text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 2em 1.8em 1em 2em;
+}
+
+h6{
+    font-size: 0.9em;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 0.4em;
+}
+
+.main-text p{
+    width: 80%;
+    line-height: 1.6;
+    color: hsl(228, 12%, 48%);
+    padding-bottom: 1em;
+}
+
+.main-text-prices{
+    display: flex;
+    align-items: center;
+}
+
+.main-text-prices-normalText{
+    text-decoration: line-through;
+}
+
+.main-text-prices-boldText{
+    color: hsl(158, 36%, 37%);
+    font-size: 2em;
+    font-family: 'Fraunces', serif;
+}
+
+.main-text button{
+    border-radius: 5px;
+    background-color: hsl(158, 36%, 37%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    padding: 0.9em 0;
+    border: 0px;
+    width: 85%;
+    color: #fff;
+    margin-top: 4%;
+    font-weight: 600;
+}
+
+/* Hover */
+.main-text button:hover{
+    background-color: #354217;
+}
+
+.credits a:hover{
+    color: #354217;
+}
+
+/* Credits */
+.credits{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 1em 1em;
+}
+ 
+.credits a{
+    text-decoration: none;
+}
+
+
+/* Media Queries */
+@media (max-width: 700px) {
+    body{
+        height: auto;
+        margin-bottom: 3em;
+    }
+
+    h1{
+        font-size: 2em;
+    }
+
+    main{
+        width: 25em;
+        flex-direction: column;
+        margin: 3em auto 0 auto;
+    }
+
+    .main-image{
+        width: 100%;
+        margin-bottom: 2em;
+    }
+    
+    .main-image_{
+        display: none;
+    }
+
+    .main-image-mobile{
+        display: initial;
+        width: 100%;
+        border-radius: 5px 5px 0 0;
+    }
+
+    .main-text{
+        width: 90%;
+        margin: auto;
+    }
+
+    .main-text p{
+        width: 100%;
+    }
+
+    .main-text button{
+        width: 100%;
+        align-self: center;
+        margin-bottom: 2em;
+    }
+}
+
+@media (max-width: 400px) {
+    main{
+        width: 20em;
+        flex-direction: column;
+        margin: 3em auto 0 auto;
+    }
+}
